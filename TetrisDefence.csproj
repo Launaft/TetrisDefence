@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\block.png" />
+    <None Remove="Resources\blue_slime.png" />
+    <None Remove="Resources\brown_slime.png" />
+    <None Remove="Resources\floor.png" />
+    <None Remove="Resources\green_slime.png" />
+    <None Remove="Resources\grey_slime.png" />
+    <None Remove="Resources\help_v2%281%29.png" />
+    <None Remove="Resources\help_v2%282%29.png" />
+    <None Remove="Resources\help_v2%283%29.png" />
+    <None Remove="Resources\help_v2%284%29.png" />
+    <None Remove="Resources\help_v2%285%29.png" />
+    <None Remove="Resources\help_v2%286%29.png" />
+    <None Remove="Resources\help_v2%287%29.png" />
+    <None Remove="Resources\left_wall.png" />
+    <None Remove="Resources\pink_slime.png" />
+    <None Remove="Resources\red_slime.png" />
+    <None Remove="Resources\right_wall.png" />
+    <None Remove="Resources\upgraded_block.png" />
+    <None Remove="Resources\white_slime.png" />
+    <None Remove="Resources\yellow_slime.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\block.png" />
+    <Resource Include="Resources\blue_slime.png" />
+    <Resource Include="Resources\brown_slime.png" />
+    <Resource Include="Resources\floor.png" />
+    <Resource Include="Resources\green_slime.png" />
+    <Resource Include="Resources\grey_slime.png" />
+    <Resource Include="Resources\help_v2(1).png" />
+    <Resource Include="Resources\help_v2(2).png" />
+    <Resource Include="Resources\help_v2(3).png" />
+    <Resource Include="Resources\help_v2(4).png" />
+    <Resource Include="Resources\help_v2(5).png" />
+    <Resource Include="Resources\help_v2(6).png" />
+    <Resource Include="Resources\help_v2(7).png" />
+    <Resource Include="Resources\left_wall.png" />
+    <Resource Include="Resources\pink_slime.png" />
+    <Resource Include="Resources\red_slime.png" />
+    <Resource Include="Resources\right_wall.png" />
+    <Resource Include="Resources\upgraded_block.png" />
+    <Resource Include="Resources\white_slime.png" />
+    <Resource Include="Resources\yellow_slime.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
